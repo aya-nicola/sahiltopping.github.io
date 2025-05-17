@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    background: linear-gradient(#6a11c6,#0f8922);
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    @media(max-width: 700px) {
+        .container{
+            grid-template-columns: 1fr;
+            padding: 30px;
+            background-color: (rgba(0, 0, 0, 0.3 rgb(226, 21, 21), blue, alpha));
+        }
+        img{
+            width: 700px;
+            height: 700px;
+        }
+        
+    }
+.container{
+    display: grid;
+    max-width: 900px;
+    gap: 30px;
+    padding: 50px;
+    margin :auto;
+    grid-template-columns: 1fr 2fr;
+}
+.car img{
+  animation: carmove 8s linear infinite;  
+}
+    
+
+
+.car{
+    left:50%;
+    bottom: 10px;
+    transform:translate(-50%);
+    width: 500px;
+    z-index: 2;
+    position: absolute;
+}
+@keyframes carmove{
+    0%{transform: translate(0);}
+100%{transform: translateX(120px);}
+  }
+  @media screen and (max-width: 900px){
+Img{
+Height: 200px;
+Width: 200px;
+}
+}
+
